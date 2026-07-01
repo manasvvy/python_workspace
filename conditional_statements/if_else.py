@@ -1,12 +1,12 @@
 #int
 
-'''print("start")
+print("start")
 num=int(input("enter any number"))
 if num>=0:
     print(f"{num} is a positive number")
 else:
     print(f"{num} is a negative number")
-print("end")'''
+print("end")
 
 #string
 
