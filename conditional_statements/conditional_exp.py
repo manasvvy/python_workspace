@@ -6,3 +6,4 @@ print(result)
 number=int(input("enter a number"))
 result= number**2 if number>=0 else number**3
 print(result)
+ 

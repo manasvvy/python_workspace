@@ -12,7 +12,7 @@ print(list(r3))
 
 r4=range(-1,-11,-1)
 print(list(r4))
-
+ 
 r5=range(-10,6)
 print(list(r5))
 
