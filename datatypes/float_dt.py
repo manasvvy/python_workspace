@@ -1,5 +1,5 @@
 height=5.5
-#contains decimal pt
+#contains decimal point
 
 dt=type(height)
 print(dt)
