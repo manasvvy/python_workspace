@@ -1,5 +1,6 @@
 print("start")
 age=int(input("enter ur age"))
+
 if age>1 and age<13:
     print("child")
 elif age>=13 and age<18:
