@@ -1,7 +1,7 @@
 #print numbers from 7 to 28 using for loop
 
 for i in range(7,29):
-    print(i,end=" ")
+    print(i,end=" ") 
 
 
 #print numbers from 7 to 28 using for loop but even numbers should be skipped
