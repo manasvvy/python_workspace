@@ -1,6 +1,6 @@
 #print the main dish name with side dish
 
-mains=["idli","dosa","chapati"]
+mains=["idli","dosa","chapati"] 
 sides=["curry","chutney","sambar"]
 
 for m in mains:
