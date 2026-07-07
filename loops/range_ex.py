@@ -21,4 +21,4 @@ print(list(r6))
 
 r7=range(8,-25,-5)
 print(list(r7))
-
+ 
