@@ -1,4 +1,4 @@
-'''#print using while loop numbers from 1 to 7
+#print using while loop numbers from 1 to 7
 
 num=1 #initialization
 while num<=7: #condition
@@ -33,7 +33,7 @@ while num2<22:
         print(num2)
     num2=num2+1
 
-print("----------------------------")'''
+print("----------------------------")
 
 #print only the even numbers in the list
 #use index no of list to get the ele
