@@ -32,10 +32,10 @@ for char in s:
 
 #get a new str the output should be xylmphlomtracha
 
-s="xylemphloemtrachae"
-s1="xylmphlomtracha"
+s1="xylemphloemtrachae"
+new =" "
 for s in s1:
-    if s1=="xylmphlomtracha":
+    if s=="e":
         continue
-    print(s1,end="")
+    print(new)
 
