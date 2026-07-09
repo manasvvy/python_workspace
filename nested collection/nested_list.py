@@ -18,3 +18,11 @@ nl=[["goku",70,45000],["joku",170,40000],["loku",560,105]]
 for l in nl:
     if l[1]>100:
         print(l[1]) 
+
+#print only the names whos salary is greater than 10000
+
+ll=[["jake",10,25000],["ben",24,10000],["chad",15,70000]]
+print(ll)
+for il in ll:
+    if il[2]>10000 and il[2]<40000:
+        print(il[0].upper())
