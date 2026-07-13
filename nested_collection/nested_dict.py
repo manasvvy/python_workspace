@@ -1,5 +1,6 @@
 #impppppppp
 
+
 company = {"emp1":{"empid":3,"ename":"zaraki","salary":80000,"dept":"accounts"}, 
         "emp2":{"empid":38,"ename":"piccollo","salary":10000,"dept":"research"},
         "emp3":{"empid":22,"ename":"zach","salary":59000,"dept":"tech"}}
