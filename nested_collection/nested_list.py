@@ -1,4 +1,5 @@
 
+
 #loop the dict when iterating check if the goal scored is greater than 6,print their names and goals
 
 d={"messi":9,"yamal":1,"mbappe":7,"holland":6}
