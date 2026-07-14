@@ -1,3 +1,4 @@
+
 # Slicing
 # The process of extracting a part/portion from a sequence type collection is known as slicing.
 # Slicing can be done only on index-based (ordered) collections.
