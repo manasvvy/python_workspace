@@ -1,4 +1,4 @@
-#function without parameter and without return
+'''#function without parameter and without return
 
 def show(): #function declaration
     print("function without parameter and returm") #function
@@ -28,10 +28,55 @@ print(m)
 #with parameter and without return
 
 def book_my_show(theater,movie,price):
-    print(f"{movie}movie is displayed in {theater}theater for {rupees} rupees")
+    print(f"{moviename}movie is displayed in {theatername}theater for {ticketprice}")
 book_my_show("nexus mall theater", "superman", 500)    #actual values
-book_my_show("dcl", "batman", 1500)    #actual values
+book_my_show("dcl", "batman", 1500)    #actual values'''
 
 
 #with parameter and with return
+
+def send_otp(phoneno):
+    print("send otp to this phoneno")
+    return 1234
+otp=send_otp(4522154585)
+print(otp)
+
+#print(send_otp(4522154585))
+
+def wish(name):
+    print(f"hbd {name}")
+    return "truffle cake"
+print(wish("j"))
+
+def operations(a,b):
+    return a+b, a-b, a*b, a/b
+print(operations(4,2))
+
+def add(a,b):
+    return a+b 
+print(add(4,2))
+
+def sub(a,b):
+    return a-b
+print(sub(4,2))
+
+def multiply(a,b):
+    return a*b
+print(multiply(4,2))
+
+def div(a,b):
+    return a/b
+print(div(4,2))
+
+
+
+
+
+
+
+
+
+
+
+
 
