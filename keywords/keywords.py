@@ -5,7 +5,7 @@ Enter "help" below or click "Help" above for more information.
 bye
 >>> 
 ===== RESTART: C:/Users/sonone/AppData/Local/Programs/Python/Python313/variable.py =====
-bye
+bye 
 10
 20
 >>> 
