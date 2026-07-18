@@ -1,6 +1,6 @@
 #operators
 ''' symbol or a keyword in py used to perform operatons b/w operands.
-types:
+types: 
 
     1)arithmetic op: used to perform mathematical op
 +(add) -(sub) *(multiply) /(div) //(floor division) %(medulus) **(exponenciations)
