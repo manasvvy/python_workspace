@@ -3,7 +3,7 @@
 # 1) ref.add(object)
 # Adds an element to the set
 
-s1=set()
+s1=set() 
 s1.add(24)
 print(s1)
 
