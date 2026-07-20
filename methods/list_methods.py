@@ -3,7 +3,7 @@
 # 1) ref.append(object)
 # Adds element at the end of the list
 
-l=[20,40,60,80]
+l=[20,40,60,80] 
 l.append(100)
 print(l)
 
