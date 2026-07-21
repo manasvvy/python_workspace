@@ -21,34 +21,6 @@ print("-" * 50)
 
 
 # ==========================================================
-# LOCAL VARIABLE
-# ==========================================================
-
-def display():
-    # Local variable
-    # Exists only inside this function.
-    c = 30
-
-    print("Local variable inside the function:", c)
-
-    c += 40
-
-    print("Modified local variable inside the function:", c)
-
-
-display()
-
-# The following lines will give NameError because
-# 'c' exists only inside display().
-
-# print(c)
-# c += 50
-
-
-print("-" * 50)
-
-
-# ==========================================================
 # FUNCTION PARAMETER
 # ==========================================================
 
