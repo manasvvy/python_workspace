@@ -1,3 +1,4 @@
+
 '''functions are treated as first class citizens in python: py treats a function 
 ->variables that can be stored
 ->as smthng that can be passed as an argument
