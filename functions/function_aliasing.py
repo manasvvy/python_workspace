@@ -72,7 +72,11 @@ ie when a func returns another func it carries some data or logic with it, this 
 //steps to create a closure//
 1->create a outer func with variable
 2->define an inner func which uses that variable
-3->outer function returns an inner function activating the closure'''
+3->outer function returns an inner function activating the closure
+
+*inner function can access and remember the global variable even after its destroyed
+(ability to remember is closure)
+=> closures are used in decorators and encapsulation logic'''
 
 def outer():
     a=100           #enclosing variable
@@ -84,6 +88,63 @@ inf=outer()         #ofc
 inf()               #we are able to access and remember the outer function variable even after its execution
 
 print("-------------------------------------------")
+
+#of name is get color and it has an enclosing var named as color blue inner function is show color showcase closure concepts
+
+def get_color():
+    color="blue"
+    def show_color():
+        print("color is",color)
+    return show_color
+b=get_color()
+b()
+
+print("-------------------------------------------")
+
+#there is of named counter having enclosing variable count=0 there is if named increment and when its called the count variable should get incremented and print the count var achieve using closure
+
+def counter():
+    count=0
+    def increment():
+        nonlocal count
+        count+=1
+        print(count)
+    return increment
+k=counter()    
+k()
+k()
+k()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
