@@ -1,3 +1,4 @@
+
 '''DECORATORS-it is a function that modifies the beaviour of another function without changing its code
 or
 it is a func that takes another func as input adds extra behaviour and returns a new function without changing the original function code
