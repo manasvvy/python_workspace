@@ -87,6 +87,9 @@ UnboundLocalError
 Example:
 p = 50
 
+
+
+
 def show():
      p -= 20
 
