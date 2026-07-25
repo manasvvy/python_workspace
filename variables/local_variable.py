@@ -8,3 +8,5 @@ def show():
 show()
 print("Outside function (global p):", p)
 print("-" * 50)
+
+
