@@ -85,6 +85,3 @@ print("/".join(l))
 
 s14="he is a good boy"
 print(len(s14.split()))
-
-
-
