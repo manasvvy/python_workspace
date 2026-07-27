@@ -1,3 +1,4 @@
+
 '''ITERATOR
 1-> object in python that allows to traverse/iterate to all the elements of a collection . one element at a time
 2-> iterator is unidirectional(allows to travers left to right)
