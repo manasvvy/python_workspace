@@ -1,4 +1,4 @@
-'''generator is an object in python
+'''GENERATOR is an object in python
 ->it is a function used to create a sequence of elements using the YIELD keyword
 ->if a user defined funcc contains atleast 1 yeild keywords then the func becomes generator
 ->a generator generates values one by one not at once
