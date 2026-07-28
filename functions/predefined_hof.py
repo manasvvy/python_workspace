@@ -1,9 +1,8 @@
 l=[10,20,30,40]
+
 def square(n):
     return n**2
-
-
-
+    
 def hof(fun,coll):
     nl=[]
     for i in coll:
