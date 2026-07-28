@@ -1,5 +1,4 @@
 '''
-
 LAMBDA FUNCTION
 -> its an anonymous function which is defined using lambda keyword
 or
