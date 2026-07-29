@@ -1,4 +1,4 @@
-'''
+''' 
 COMPREHENSIONS WERE INTRODUCED TO REPLACE THE LOOP+APPEND PATTERN IN A READABLE AND DECLARATIVE WAY
 =>it is a compact,readable 1 line way to create a new collection
 =>it combines 3 operations:
