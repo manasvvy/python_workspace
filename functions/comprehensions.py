@@ -71,3 +71,40 @@ syntax1:
 l2=[2,3,4,5,6,7]
 dl={i : i**3 for i in l2}
 print(dl)
+
+'''syntax2:
+{key_expression : value_expression for item in collection if condition}
+'''
+
+l=[2,3,4,5,6,7,8]
+dll={i:i**3 for i in l if i%2==0}
+print(dll)
+
+ll=[45,34,79,91,23]
+ddll={i:"pass" for i in ll if i>35}
+print(ddll)
+
+'''syntax3:
+{key_expression :(true_value_expression if condition else false_value_condition )for item in collection}
+'''
+ll=[45,34,79,91,23]
+ddll={i:("pass" if i>35 else "Fail" )for i in ll }
+print(ddll)
+
+d={"amy":90,"ben":45,"chad":36,"ben":29}
+dd={i:("pass" if d[i]>45 else "fail")for i in d}
+di={k:("pass" if v>45 else "fail")for k,v in d.items()} #getting key value using .items()
+print(di)
+print(dd)
+
+
+
+
+
+
+
+
+
+
+
+ 
