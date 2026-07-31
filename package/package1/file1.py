@@ -1,3 +1,4 @@
+
 import keyword as k , random as r
 from math import pi as p ,sqrt as s ,cbrt as c
 
