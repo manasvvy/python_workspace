@@ -1,5 +1,5 @@
 name="manasvi"
 
 def display():
-    print("displaying py")
+    print("displaying name")
     
