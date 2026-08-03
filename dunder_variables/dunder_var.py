@@ -2,7 +2,7 @@
 
 -> Short form for Double Underscore.
 -> Dunder variables are predefined special variables with double underscores at the start and end.
--> These variables are automatically created by Python.
+-> These variables are automatically created by Python. 
 -> They help in identifying modules.
 -> Track where the file is stored.
 -> Control how the module behaves when they are imported.
