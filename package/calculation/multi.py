@@ -3,3 +3,4 @@ def mul(a,b):
 
 if __name__=="__main__":
     print(mul(2,3))
+
