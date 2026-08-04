@@ -16,7 +16,7 @@ we need OOPS
     pass
 
  2. object
-
+ 
  -> its an instance of a class or a real world entity that contains state and behaviour
 
  -> to create an obj , class is mandatory 
