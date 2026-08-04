@@ -36,6 +36,6 @@ KEYWORDS:
 ->used to give a shorter alt name to a member(var,func,classname)
            syntax1 = import modulename as m
            syntax2 = from modulename import membername1 as m1 , menbername2 as m2
-           
+            
 '''
 
