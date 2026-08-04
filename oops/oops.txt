@@ -1,0 +1,65 @@
+OOPS
+-> in python we can write a program without classes, with the help of functions, but for real time large apps
+we need OOPS
+
+2 imp concepts :
+
+ 1. class
+
+ -> its a blueprint or a template or a logical entity that describes the property and behaviour of an object
+ 
+ -> we declare a class in py using class keyword
+
+ syntax = 
+ class ClassName:
+    #classbody
+    pass
+
+ 2. object
+
+ -> its an instance of a class or a real world entity that contains state and behaviour
+
+ -> to create an obj , class is mandatory 
+
+ -> using 1 class we can create n no of objects
+
+ -> every obj is an independent entity and changes made to 1 obj wont affect other 
+
+ syntax=
+ referance = ClassName() 
+
+PROCESS OF CREATING AN INSTANCE IS INSTANTIATION
+
+4 principles : 
+1. encapsulation
+2. inheritance
+3. polymorphism
+4. abstraction
+
+MEMORY ALLOCATION
+
+ -> when py encounters a class keyword it creates class dict and inside it all the class var and methods in the class wil be stored in the form of key val pair
+
+ -> when an instance is created py will have a seperate instance dict which will store that instances data/states (instance variable)
+
+VARIABLES WITH RESPECT TO CLASS AND INSTANCE
+
+1. CLASS VARIABLES
+
+ -> these are var that are defined instide the class but outside all methods
+
+ -> variable that are created using the class name but outside the class
+
+ -> only 1 copy of class variables is present for the entire class and its not tied to any instance
+
+ -> class variable are stored in the class dict
+
+ -> when any value is common for all the instances then such variables can be made class variable   
+ 
+ syntax=
+ class ClassName:
+    variablename = value
+ ClassName.variablename = value    
+
+
+2. INSTANCE VARIABLES
