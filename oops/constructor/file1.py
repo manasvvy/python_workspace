@@ -4,8 +4,6 @@ class pen:
         self.cost=10       #iv2
 
 p1=pen() #instance1 pen()=constructor call  p1=reference
-
-
 p2=pen() #instance2
 
 print(p1.__dict__)
