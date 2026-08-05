@@ -3,8 +3,6 @@ class Student:
     course_name="pythonfs"     #cv1
     classroom=201              #cv2
 
-
-
 '''print(Student)
 s1=Student()         #instantiation
 s2=Student()
