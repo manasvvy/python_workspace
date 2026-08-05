@@ -15,7 +15,13 @@ print(s2)
 print(s3)'''
 print(Student.__dict__)
 
-#print(s1.__dict__)
-
+s1=Student()
+print(s1) #accessing class var using referance variable
 Student.institute="dcl"
+print(Student.institute) #access the class variablename
+
+#syntax to modify the cv:
+
+Student.institute="DCL"
+print(Student.__dict__)
 print(Student.institute) #access the class variablename

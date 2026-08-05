@@ -61,5 +61,50 @@ VARIABLES WITH RESPECT TO CLASS AND INSTANCE
     variablename = value
  ClassName.variablename = value    
 
+ syntax to modify the class variable=
+  ClassName.variablename = new value
+
+<<<<<<< HEAD
+2. INSTANCE VARIABLES
+=======
 
 2. INSTANCE VARIABLES
+ 
+ -> instance creation is mandatory to declare instance variable
+
+ -> one copy of the instance , created seprately  for each instance
+
+ -> if a var is unique we make it as instance varuable
+
+WE CAN ACCESS OR MODIFY AN INSTANCE VARIABLES
+   ACCESSING => instanceref.variablename
+   MODIFYING => instanceref.variablename = new value
+
+ -> modifying an instance variablewill only affect that specific instance   
+
+syntax=
+ instance_reference.variable_name = value 
+
+CONSTRUCTOR/INITIALISER
+
+ -> block of code/dunder method used to declare and initialise instance variable of an object/instance
+
+  syntax=
+
+  - the constructor must be written within the class and its name should be __init__ (self)
+  - (self) is the 1st implicit parameter in the constructor and it refers to the current invoking instance 
+  - using self parameter insidethe constructor we define instance variables using => self.variablename = value 
+  - instance creation is mandatory to execute constructor/initializer
+  - if there are n parameters in the constructor we need to pass n-1 arguments during the instance creation  
+
+   class ClassName:
+      def __init__(self):
+      #constructor block used to initialize instance variable
+   referance=ClassName()   #CONSTRUCTOR CALL
+
+
+ 
+
+
+ ->
+>>>>>>> 018056c (add class example in oops)
