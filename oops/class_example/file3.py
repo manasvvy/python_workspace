@@ -1,5 +1,5 @@
 #create student class, have 3cv create 3 student instance in each student instance have 3 instance variable print any 1 cv and iv modify any 1 cv and iv
-
+ 
 class student:
     school="AGPS"
     principal="idk"
