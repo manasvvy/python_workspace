@@ -1,5 +1,4 @@
 #class method
-
 class Teacher:
     school="agps" #cv
     principal="idkbro" #cv
