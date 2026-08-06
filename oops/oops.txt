@@ -64,9 +64,6 @@ VARIABLES WITH RESPECT TO CLASS AND INSTANCE
  syntax to modify the class variable=
   ClassName.variablename = new value
 
-<<<<<<< HEAD
-2. INSTANCE VARIABLES
-=======
 
 2. INSTANCE VARIABLES
  
@@ -102,9 +99,60 @@ CONSTRUCTOR/INITIALISER
       #constructor block used to initialize instance variable
    referance=ClassName()   #CONSTRUCTOR CALL
 
+TYPES OF CONSTRUCTOR
+ 1. DEFAULT CONSTRUCTOR
+  
+  -it wont be visible to the user
+  -this will be present in the superclass object
+  -when the used does not provide CC DC will be used during instance creation 
 
+ 2. CUSTOM CUNSTRUCTOR
+
+  -will be defined by the user in the class
+  2.1 NONPARAMETERISED CONSTRUCTOR
+  -> CONSTRUCTTOR W ONLY SELF PARAMETER
+
+  2.2 PARAMETERISED
+  -> CONSTRUCTOR W SELF AND OTHER PARAMETERS
+
+
+ ***METHODS WRT CLASS AND OBJECT***
+
+ALL METHODS ARE STORED IN THE CLASS DICTIONARY
+
+ 1. CLASS METHODS
+
+ -> belongs to class itself
+ -> works on class level data and not on instance
+ -> it recieves the class reference as the 1st parameter refered to class
+ -> declared using @classmethod decorator just above the method
+
+ SYNTAX(class method)- 
+   class ClassName:
+      @classmethod
+      def methodname(cls,para1,2.......):
+         #method body
+      ClassName.methodname(arg1,a2,a3) 
+
+ -> a class method can modified and access the class var
+ -> accessing class method using ClassName.classmethod()
+ -> when the operation is related to a class and not a particular instance we use class method 
+ -> if there are n parameters in the class we should pass "n-1" arguments during the class method calling
+
+ 2. INSTANCE METHODS
+ -> belongs to the instance
+ -> works on a specific data
+ -> it recieves current instance referance as the 1st parameter refered to self
  
-
-
+ SYNTAX-
+    class ClassName:
+      def methodname(cls,para1,2.......):
+         #method body
+         #u can access or modify the instance variable
+      referance=ClassName()
+      reference.methodname(arg1,2,3) #n-1 arguments
+   
+ 3. STATIC METHODS
  ->
->>>>>>> 018056c (add class example in oops)
+ ->
+ ->
