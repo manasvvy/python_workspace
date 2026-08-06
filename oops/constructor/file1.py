@@ -7,7 +7,7 @@ p1=pen() #instance1 pen()=constructor call  p1=reference
 p2=pen() #instance2
 
 print(p1.__dict__)
-print(p2.__dict__)
+print(p2.__dict__) 
 
 print("----------------------------------------------------------")
 
