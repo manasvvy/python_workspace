@@ -7,7 +7,7 @@ class Teacher:
     @classmethod
     def display_deets(cls):
         print(cls.school) #printing is basically accessing the class variable
-        print(cls.principal)
+        print(cls.principal) 
 
     @classmethod
     def change_principal(cls,newp):
