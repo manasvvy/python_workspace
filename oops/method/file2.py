@@ -17,8 +17,7 @@ c2=Chocolate("kitkat",20,"milkchocolate")
 c1.display_details()
 c2.display_details()
 
-
-    #cricket
+#cricket
 
 class Cricket:
     def __init__(self,name,team,jerseyno):
