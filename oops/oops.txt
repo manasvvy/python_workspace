@@ -167,7 +167,8 @@ ALL METHODS ARE STORED IN THE CLASS DICTIONARY
  -> can be called using ClassName of instance_reference
  -> behaves like a normal func but used when logic is relatedto class 
   
-   class ClassName:
+SYNTAX:  
+  class ClassName:
       @staticmethod
       def methodname()
       #staticbody
