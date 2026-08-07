@@ -5,6 +5,7 @@ we need OOPS
 2 imp concepts :
 
  1. class
+
  -> its a blueprint or a template or a logical entity that describes the property and behaviour of an object
  
  -> we declare a class in py using class keyword
@@ -15,6 +16,7 @@ we need OOPS
     pass
 
  2. object
+ 
  -> its an instance of a class or a real world entity that contains state and behaviour
 
  -> to create an obj , class is mandatory 
@@ -151,6 +153,24 @@ ALL METHODS ARE STORED IN THE CLASS DICTIONARY
       reference.methodname(arg1,2,3) #n-1 arguments
    
  3. STATIC METHODS
- ->
- ->
- ->
+ -> not depend onn class or instance
+ -> cant operate on class or instance methods
+ -> it does not recieve self or cls as 1st parameters
+ -> should be defined usind @staticmethod
+
+ SYNTAX:
+   class ClassName:
+      @staticmethod
+      def method_name(p1,p2......)
+      #method body
+
+ -> can be called using ClassName of instance_reference
+ -> behaves like a normal func but used when logic is relatedto class 
+  
+   class ClassName:
+      @staticmethod
+      def methodname()
+      #staticbody
+   ClassName.method()
+   referance=ClassName
+   referance.methodname()   
