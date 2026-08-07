@@ -13,7 +13,6 @@ Student.calculate_percentage(70,25)
 
 
 #cgpa converter
-
 #static method
 
 class Student:
