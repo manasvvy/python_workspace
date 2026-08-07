@@ -37,6 +37,7 @@ t1 = NewTicket(101, "Manasvi", "A12")
 t1.display_ticket()
 
 NewTicket.increment_gst(3)
+
 print("Updated GST:", NewTicket.gst_rate)
 
 print(NewTicket.valid_age(20))  
