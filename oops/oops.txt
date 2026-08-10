@@ -3,11 +3,8 @@ OOPS
 we need OOPS
 
 2 imp concepts :
-
  1. class
-
  -> its a blueprint or a template or a logical entity that describes the property and behaviour of an object
- 
  -> we declare a class in py using class keyword
 
  syntax = 
@@ -16,13 +13,9 @@ we need OOPS
     pass
 
  2. object
- 
  -> its an instance of a class or a real world entity that contains state and behaviour
-
  -> to create an obj , class is mandatory 
-
  -> using 1 class we can create n no of objects
-
  -> every obj is an independent entity and changes made to 1 obj wont affect other 
 
  syntax=
@@ -36,16 +29,17 @@ PROCESS OF CREATING AN INSTANCE IS INSTANTIATION
 3. polymorphism
 4. abstraction
 
+______________________________________________________________________________________________________________________________________________
+
 MEMORY ALLOCATION
-
  -> when py encounters a class keyword it creates class dict and inside it all the class var and methods in the class wil be stored in the form of key val pair
-
  -> when an instance is created py will have a seperate instance dict which will store that instances data/states (instance variable)
+
+______________________________________________________________________________________________________________________________________________
 
 VARIABLES WITH RESPECT TO CLASS AND INSTANCE
 
 1. CLASS VARIABLES
-
  -> these are var that are defined instide the class but outside all methods
 
  -> variable that are created using the class name but outside the class
@@ -66,7 +60,6 @@ VARIABLES WITH RESPECT TO CLASS AND INSTANCE
 
 
 2. INSTANCE VARIABLES
- 
  -> instance creation is mandatory to declare instance variable
 
  -> one copy of the instance , created seprately  for each instance
@@ -81,6 +74,8 @@ WE CAN ACCESS OR MODIFY AN INSTANCE VARIABLES
 
 syntax=
  instance_reference.variable_name = value 
+
+______________________________________________________________________________________________________________________________________________
 
 CONSTRUCTOR/INITIALISER
 
@@ -101,13 +96,11 @@ CONSTRUCTOR/INITIALISER
 
 TYPES OF CONSTRUCTOR
  1. DEFAULT CONSTRUCTOR
-  
   -it wont be visible to the user
   -this will be present in the superclass object
   -when the used does not provide CC DC will be used during instance creation 
 
  2. CUSTOM CUNSTRUCTOR
-
   -will be defined by the user in the class
   2.1 NONPARAMETERISED CONSTRUCTOR
   -> CONSTRUCTTOR W ONLY SELF PARAMETER
@@ -115,6 +108,7 @@ TYPES OF CONSTRUCTOR
   2.2 PARAMETERISED
   -> CONSTRUCTOR W SELF AND OTHER PARAMETERS
 
+______________________________________________________________________________________________________________________________________________
 
  ***METHODS WRT CLASS AND OBJECT***
 
@@ -139,6 +133,8 @@ ALL METHODS ARE STORED IN THE CLASS DICTIONARY
  -> when the operation is related to a class and not a particular instance we use class method 
  -> if there are n parameters in the class we should pass "n-1" arguments during the class method calling
 
+______________________________________________________________________________________________________________________________________________
+
  2. INSTANCE METHODS
  -> belongs to the instance
  -> works on a specific data
@@ -151,7 +147,8 @@ ALL METHODS ARE STORED IN THE CLASS DICTIONARY
          #u can access or modify the instance variable
       referance=ClassName()
       reference.methodname(arg1,2,3) #n-1 arguments
-   
+______________________________________________________________________________________________________________________________________________
+
  3. STATIC METHODS
  -> not depend onn class or instance
  -> cant operate on class or instance methods
@@ -175,10 +172,12 @@ SYNTAX:
    ClassName.method()
    referance=ClassName
    referance.methodname()
+______________________________________________________________________________________________________________________________________________
 
 * METHOD OVERLOADING => DEFINING MULTIPLE METHODS WITH THE SAME NAME BUT DIFFERENT PARAMETERS IN THE SAME CLASS 
                         BUT PYTHON DOES NOT SUPPORT METHOD OVERLOADING.
-                        
+______________________________________________________________________________________________________________________________________________  
+
 INHERITANCE
    -> THE PROCESS OF 1 CLASS AQUIRING THE PROPERTIES PF ANOTHER CLASS
    -> THE CLASS WHICH SHARES THE PROPERTIES = PARENT CLASS
@@ -194,7 +193,8 @@ INHERITANCE
   4.MULTIPLE LEVEL
   5.HYBRID LEVEL
 
-SYNTAX=> 
+SYNTAXES=> 
+
 SINGLE
 class ParentClassName:
    #class body
@@ -203,9 +203,9 @@ class ParentClassName:
 class ChildClassName(ParentClassName):
    #CHILD CLASS BODY
    #child PROPERTIES
+_____________________________________________________________________________________________________________________________________________
 
 MULTI-
-
 class A:
    #class body
    #parent PROPERTIES
@@ -217,3 +217,5 @@ class B(A):
 class C(B):
    #class body of C
    #child PROPERTIES   
+
+______________________________________________________________________________________________________________________________________________
