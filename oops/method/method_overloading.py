@@ -1,3 +1,5 @@
+'''METHOD OVERLODING EX- ONLY LAST METHOD EXECUTES'''
+
 class calculator:
     def add(self,n1):
         print(n1+n1)
