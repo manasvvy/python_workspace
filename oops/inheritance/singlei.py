@@ -1,3 +1,4 @@
+#EX-SINGLE LEVEL INHERITANCE
 class book:  #parentclass
     def display_index(self):
         print("every book has index page")
