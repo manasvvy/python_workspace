@@ -1,3 +1,4 @@
+#EX1
 class vehicle:
     def move(self):
         print("vehicle moves")
@@ -21,6 +22,8 @@ print(bike.__dict__)
 e=electiricbike()
 e.charge()
 print(electiricbike.__dict__) 
+______________________________________________________________________________________________________________________________________________
+#EX2
 
 class employee:
     def work(self):
