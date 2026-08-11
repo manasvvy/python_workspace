@@ -1,13 +1,9 @@
 OOPS
 -> in python we can write a program without classes, with the help of functions, but for real time large apps
 we need OOPS
-
 2 imp concepts :
-
  1. class
-
  -> its a blueprint or a template or a logical entity that describes the property and behaviour of an object
- 
  -> we declare a class in py using class keyword
 
  syntax = 
@@ -16,13 +12,9 @@ we need OOPS
     pass
 
  2. object
- 
  -> its an instance of a class or a real world entity that contains state and behaviour
-
  -> to create an obj , class is mandatory 
-
  -> using 1 class we can create n no of objects
-
  -> every obj is an independent entity and changes made to 1 obj wont affect other 
 
  syntax=
@@ -36,7 +28,7 @@ PROCESS OF CREATING AN INSTANCE IS INSTANTIATION
 3. polymorphism
 4. abstraction
 
-MEMORY ALLOCATION
+-----------MEMORY ALLOCATION------------
 
  -> when py encounters a class keyword it creates class dict and inside it all the class var and methods in the class wil be stored in the form of key val pair
 
@@ -82,7 +74,7 @@ WE CAN ACCESS OR MODIFY AN INSTANCE VARIABLES
 syntax=
  instance_reference.variable_name = value 
 
-CONSTRUCTOR/INITIALISER
+---------CONSTRUCTOR/INITIALISER-----------
 
  -> block of code/dunder method used to declare and initialise instance variable of an object/instance
 
