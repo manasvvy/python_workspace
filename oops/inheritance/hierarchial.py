@@ -24,7 +24,7 @@ print(dev.__dict__)
 
 f=tester()
 f.test_code()
-print(tester.__dict__)
+print(tester.__dict__) 
 
 dd=devopsdev()
 dd.deploy()
