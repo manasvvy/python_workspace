@@ -2,6 +2,7 @@ class teacher:
     def teaches(self):
         print("teacher teaches")
 
+
 class student:
     def studies(self):
         print("student learns")   
