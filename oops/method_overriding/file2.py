@@ -1,6 +1,6 @@
 #method overriding using multi level instance
 
-from typing_extensions import override
+from typing_extensions import override 
 class wa1:
     def msg(self):
         print("single tick")
