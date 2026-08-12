@@ -1,5 +1,6 @@
 #method overriding using single level instance
 
+
 from typing_extensions import override
 class athlete:         #superclass
     def pushups(self): #instance method
