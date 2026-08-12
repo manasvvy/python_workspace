@@ -248,6 +248,32 @@ class C(B):
   c=ChildClassName
   c.methodname()        
   
-                                 
+#SUPER functions= super()
+
+ -> it is a built in function that allows a child class to call methods from its parent class its the proper
+ way to access parent class functionality especially when u r OVERRIDING methods 
+
+ WHY DO WE NEED super()
+  -> retain and reuse - it helps retain reuse functionality parent class while having the 
+  flexibility to provide custom implimentation in child class.
+  -> avoide code repetation - u can call parent class implimentation and customise
+  -> maintain consistency - when overriding it ensures that the parent  initilization  or behaviour is not lost
+
+  syntax=
+  super().methodname(args)
+
+2. CONSTRUCTOR CHAINING
+ -> process wherein the parent class is invoked from child class using super()
+
+ NOTE=
+ 1) defining a constructor (__init__) in a child class will stop the parent class constructr from bring auto called parent class ATTRIBUTE
+ wont be initialised unless u explicitly all super().__init__() from the child constructor
+
+ 2) super() doesnt just call immediate parent it follows method resolution order in inheritance hierarchies espicially imp n multiple inheritance  
+
+syntax= super().__init__(args)
+
+
+
 2. OPERATOR
 3. DUCK TYPING
