@@ -1,5 +1,5 @@
 OOPS
--> in python we can write a program without classes, with the help of functions, but for real time large apps
+-> in python we can write a program without classes, with the help of functions, but for real time large apps 
 we need OOPS
 2 imp concepts :
  1. class
