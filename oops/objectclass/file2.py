@@ -1,6 +1,6 @@
 class pen: #everyclass inherits from object class
     def __init__(self,name,cost,typee):
-        self.name=name
+        self.name=name 
         self.cost=cost 
         self.typee=typee
 
