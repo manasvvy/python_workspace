@@ -2,7 +2,7 @@
 class vehicle:
     def move(self):
         print("vehicle moves")
-
+ 
 class bike(vehicle):
     def ride(self):
         print("ride a bike")   
