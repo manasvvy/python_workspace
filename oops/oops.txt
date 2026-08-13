@@ -228,12 +228,16 @@ class C(B):
  -> ITS IMPLIMENTED USING 3 WAYS:
       
 1. METHOD OVERRIDING
+2. OPERATOR 
+3. DUCK TYPING 
+
+1. METHOD OVERRIDING
   - feature of inheritance where child class provides its own implimentation
     for a method thats alr defined in its parent class using the same method name and signiture
 
     *steps to showcase METHOD OVERRIDING - 1.1 INHERITANCE
                                            1.2 method name of parent and child class must be same
-                                           1.3 no parameters should be same
+                                           1.3 no parameters should be same                                        
 
   - also known as runtime polymorphism bc the method which should be executed is decided at runtime based on the actual object 
   SYNTAX=
@@ -273,8 +277,44 @@ class C(B):
 
 syntax= super().__init__(args)
 
+--------------------------OBJECT CLASS-----------------------------
+
+-> in py auto inherits the from build in class object its an ultimate base class the root of python inheritance hierarchy
+->even if u dont explicitly mention it ur class will inherit from object
+
+IMPORTANCE OF ONJECT CLASS
+ IT PROVIDES THE SET OF USEFUL PREDEFINED SPL METHON (DUNDER) RHAT DEFAULT BEHAVIOUR TO ALL OBJECT SUCH AS:
+ -printing/string representation
+ -comparison operation
+ -hashing
+ -identity and type checking
+
+ FEW IMP DUNDER METHODS-
+ 1. __new__(cls)
+ -> it creates and returns a new instance
+ ->controls instance creation
+ ->uses object.__new__(cls) to allocate memory loc for instance
 
 
-2. OPERATOR
-3. DUCK TYPING
+2. __init__(self)
+ -> this method gets automatically called when we create an instance and is used to perform initilisation of instance
+ -> to define it in custom class we need to have self as the 1st implicit parameter
+
+3. __str__(self)
+ -> gets invoked whenever an instance is printed or when we call str 
+ ->when called by default it returns the str representationof an instance
+ ->str representation is FullyQualifiedClassName
+ @hexadecimal format
+->we can override the __str__() to custom str representationuseful to user
+
+NOTE- IT MUST RETURN STRING 
+
+
+4. __repr__(cls)
+5. __eq__(self,other)
+6. __hash__(self)
+
+
+
+
 
