@@ -1,7 +1,7 @@
 class employee: #everyclass inherits from object class
     def __init__(self,name,age,dept):
         self.name=name
-        self.age=age 
+        self.age=age  
         self.dept=dept
 
     def __str__(self):   #methodname and parameters are same
