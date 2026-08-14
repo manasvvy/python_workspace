@@ -1,6 +1,6 @@
 class person:
     def __init__(self,mail,name,age):
-        self.mail=mail
+        self.mail=mail 
         self.name=name 
         self.age=age
 
