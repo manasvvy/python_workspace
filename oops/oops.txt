@@ -309,12 +309,30 @@ IMPORTANCE OF ONJECT CLASS
 
 NOTE- IT MUST RETURN STRING 
 
-
 4. __repr__(cls)
-5. __eq__(self,other)
-6. __hash__(self)
+ -> returns the not confusing dev repr of an object
+ ->this method gets called __str_() is absent and __repr__ is defined when a an instance is printed
+ ->when we invoke  repr(objref)
+ ->when we print containers
+ -> when called by default it returns string rep of the instance
+ -> used for debugging
+ -> it must always return a string 
 
 
+5. __hash__(self)
+ -> gets invoked when we call hash(obj) and bydefault returns an unique integer
+ ->hash val of an obj is used in a set and dict for quick serching
+ ->returns integer by default 
+ -> when overriding __hash__ always identify unique attribute and return hash(unique attribute)
 
+6. __eq__(self,other)
+ ->gets invoked when 2 instances are compared using == and by default it compares identity of two objects but not values
+ ->in order to compare the val of custom instance rather than its adress we need to override __eq__
+ ->__eq__ is overriden for the inbuilt type (int,float,list)
+ ->should always return bool val
+
+# isinstance(obj,ClassName):
+ -> predefined function that checks weather the given obj belongs to a particular class or nah
+ ->it returns bool val 
 
 
