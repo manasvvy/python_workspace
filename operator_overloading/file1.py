@@ -6,7 +6,7 @@ class money:
     def __add__(self,other):
         return money(self.value + other.value) #return a money instance and after that override the moneyvalue instead address
 
-    def __sub__(self,other):
+    def __sub__(self,other): 
             return money(self.value - other.value)
 
 
