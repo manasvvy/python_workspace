@@ -290,11 +290,11 @@ IMPORTANCE OF ONJECT CLASS
  -identity and type checking
 
  FEW IMP DUNDER METHODS-
- 1. __new__(cls)
+ 
+1. __new__(cls)
  -> it creates and returns a new instance
  ->controls instance creation
  ->uses object.__new__(cls) to allocate memory loc for instance
-
 
 2. __init__(self)
  -> this method gets automatically called when we create an instance and is used to perform initilisation of instance
@@ -317,7 +317,6 @@ NOTE- IT MUST RETURN STRING
  -> when called by default it returns string rep of the instance
  -> used for debugging
  -> it must always return a string 
-
 
 5. __hash__(self)
  -> gets invoked when we call hash(obj) and bydefault returns an unique integer
