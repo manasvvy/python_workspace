@@ -42,7 +42,8 @@ Operator       Dunder Method              Expression       Method Call
 3. Duck Typing
  Duck typing is a programming concept where the "type or class of an object" is less important than the methods it defines. The name comes from the phrase:
  "If it walks like a duck and quacks like a duck, then it must be a duck."
- In Python, this means:
+
+In Python, this means:
   -> You don't care about "what an object is, you care about what it can do"
   -> If an object has the required methods/attributes, it can be used in that context.
   -> Python "focuses on behavior rather than explicit type checking"
