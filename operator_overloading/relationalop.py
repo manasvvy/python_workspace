@@ -1,6 +1,6 @@
 class demo:
     pass
-
+ 
 print(5==8)
 print((5).__eq__(8))
 
