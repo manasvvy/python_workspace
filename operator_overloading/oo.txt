@@ -1,0 +1,48 @@
+OPERATOR OVERLOADING 
+
+
+Operator overloading is the ability to change the behavior of an operator (like +, -, *, ==, <, etc.) so that it works with objects of user-defined classes. This is achieved by defining special methods, often called "dunder" (double underscore) methods, within those classes.
+
+ -> Inbuilt Classes:
+     Python's built-in classes like "int, float, str, and list" already have these dunder methods defined. When you use + with two integers, Python knows to add them because the **add** method is already there.
+
+ -> User-Defined Classes:
+     Python has no idea what "+" or "==" should mean for a custom class like Employee. If you try to add two Employee objects without defining the behavior, Python will raise a TypeError. You must define the dunder methods to specify how the operators should behave.
+
+1. Arithmetic dunder methods
+ -> Used to define the behavior for mathematical operators like +, -, *, /, etc.
+ -> When you use an operator, Python automatically calls the corresponding dunder method on the object on the left side of the operator.
+ -> These methods must return a new object.
+ -> In the base object class, these methods are not defined. If you don't define them, your objects will not support these operators.
+
+Operator       Dunder Method              Expression       Method Call
+
++              __add__(self, other)       a + b             a.__add__(b)
+-              __sub__(self, other)       a - b             a.__sub__(b)
+*              __mul__(self, other)       a * b             a.__mul__(b)
+/              __truediv__(self, other)   a / b             a__truediv__(b)
+//             __floordiv__(self, other)  a // b            a__floordiv__(b)
+%              __mod__(self, other)       a % b             a__mod__(b)
+**             __pow__(self, other)       a ** b            a__pow__b)
+
+2. Relational dunder methods
+ -> Used to define the behavior for comparison operators like ==, !=, <, >, <=, >=.
+ -> Similar to arithmetic methods, the operator triggers the corresponding dunder method on the left-hand object.
+ -> These methods must return a Boolean value.
+ -> Just like the arithmetic ones, they are not defined in the base object class.
+
+Operator       Dunder Method              Expression       Method Call
+==             __eq__(self, other)        a == b            a__eq__(b)
+!=             __ne__(self, other)        a != b            a.__ne__(b)
+<              __lt__(self, other)        a < b             a.__lt__(b)
+>              __gt__(self, other)        a > b             a.__gt__(b)
+<=             __le__(self, other)        a <= b            a.__le__(b)
+> =            __ge__(self, other)        a >= b            a.__ge__(b)
+
+3. Duck Typing
+ Duck typing is a programming concept where the "type or class of an object" is less important than the methods it defines. The name comes from the phrase:
+ "If it walks like a duck and quacks like a duck, then it must be a duck."
+ In Python, this means:
+  -> You don't care about "what an object is, you care about what it can do"
+  -> If an object has the required methods/attributes, it can be used in that context.
+  -> Python "focuses on behavior rather than explicit type checking"
