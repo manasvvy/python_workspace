@@ -44,7 +44,7 @@ Operator       Dunder Method              Expression       Method Call
  "If it walks like a duck and quacks like a duck, then it must be a duck."
 
 In Python, this means:
-  -> You don't care about "what an object is, you care about what it can do"
+  -> You don't care about "what an object is, you care about what it can do" 
   -> If an object has the required methods/attributes, it can be used in that context.
   -> Python "focuses on behavior rather than explicit type checking"
 
