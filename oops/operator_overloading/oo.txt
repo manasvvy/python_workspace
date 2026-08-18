@@ -47,3 +47,7 @@ In Python, this means:
   -> You don't care about "what an object is, you care about what it can do"
   -> If an object has the required methods/attributes, it can be used in that context.
   -> Python "focuses on behavior rather than explicit type checking"
+
+hasattr(obj_ref,"attributename") = predefined functionn used to heck if the attr is present or belongs to object
+                                 = returns bool value
+                                 = returns true if the attr is present

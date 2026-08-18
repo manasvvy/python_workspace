@@ -334,4 +334,24 @@ NOTE- IT MUST RETURN STRING
  -> predefined function that checks weather the given obj belongs to a particular class or nah
  ->it returns bool val 
 
+-----------------------------------ENCAPSULATION--------------------------------------------
+
+ACCESS SPECIFIERS/MODIFIERS
+-> applies only inside classes bc classes are about encapsulation 
+-> these are used to specify the visibility of variable or methods 
+
+3 TYPES= 1. PUBLIC
+         2. PVT
+         3. PROTECTED
+
+1. PUBLIC -> ANY METHOD DECLARED NORMALLY INSIDE A PUBLIC CLASSS IS CALLED PUBLIC METHOD
+          -> NO UNDERSCORES ARE used
+          -> ACCESSED FROM ANYWHERE
+
+3. PROTECTED -> DECLARED USING "SINGLE LEADING UNDERSCORE" INSIDE A CLASS
+             -> USED INSIDE  CHILD CLASS
+             -> USED EITHER IN SAME CLASS OR ITS CHILD CLASS THIS IS CONVENTIONAL NOT ENFORCEMENT
+                        
+          
+
 
