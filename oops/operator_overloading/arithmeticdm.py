@@ -4,7 +4,7 @@ class demo:
 print(5+8)
 print((5).__add__(8))
 
-print(5-8)
+print(5-8) 
 print((5).__sub__(8))
 
 print(5*8)
