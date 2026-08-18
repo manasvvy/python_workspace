@@ -1,4 +1,4 @@
-class sms:
+class sms: 
     def msg(self):
         print("sms")
 
