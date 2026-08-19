@@ -348,9 +348,53 @@ ACCESS SPECIFIERS/MODIFIERS
           -> NO UNDERSCORES ARE used
           -> ACCESSED FROM ANYWHERE
 
+2. PRIVATE -> DECLARED USING DOUBLE LEADING UNDERSCORE INSIDE A CLASS
+           -> CANT BE ACCESSED DIRECTLY FROM OUTSIDE THE CLASS ONLY ACCESSED FROM INSIDE THE CLASS USING METHODS 
+           -> USED SPECIFICALLY TO HIDE SENSITIVE DATA           
+
 3. PROTECTED -> DECLARED USING "SINGLE LEADING UNDERSCORE" INSIDE A CLASS
              -> USED INSIDE  CHILD CLASS
              -> USED EITHER IN SAME CLASS OR ITS CHILD CLASS THIS IS CONVENTIONAL NOT ENFORCEMENT
+
+ENCAPSULATION
+ -> the process of protecting the data  by making the var private and controlling their access thru public setter
+ and getter method
+
+ -> direct access is not given to private data and methods together but the class should control how the data is read 
+
+STEPS TO ACHIEVE ENCAPSULATION
+1. a class shuld be public not abstract
+2. define private var
+3. have public setter and getter method
+
+ note = setter method
+ - used to modify priv data
+ - 1 parameter
+ - validation logic should be present inside it
+ - not supposed to return any val
+
+ getter method
+ -access pvt data
+ -no parameters
+ -returns a val
+
+ syntax=
+ class ClassName:
+   def __init__(self):
+      self.var=none 
+
+   def get_var(self): public getter
+      return self.__var
+
+   def set_var(self): public getter
+      #validation logic
+      self.__var=new val
+
+obj=ClassName()
+print(obj.get())
+obj.set_var()           
+
+ 
                         
           
 
