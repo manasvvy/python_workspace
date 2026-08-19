@@ -1,7 +1,7 @@
 #setter and getter methods
 
 class student:
-   def __init__(self,marks,fees):
+   def __init__(self):
       self.__marks=0 #pvt iv
       self.__fees=0
 
@@ -17,7 +17,7 @@ class student:
    def get_fees(self):
       return self.__fees
 
-   def set_fees(self,fees):
+   def set_fees(self):
       if fees>=0 and fees<=50000000:
          self.__fees=fees
       else:
