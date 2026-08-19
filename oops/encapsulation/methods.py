@@ -1,5 +1,4 @@
 #setter and getter methods
-
 class student:
     def __init__(self):
         self.__marks = 0
@@ -53,14 +52,10 @@ class BankAccount:
 
 
 b1 = BankAccount()
-
 print(b1.get_balance())
-
 b1.deposit(20000)
 print(b1.get_balance())
-
 b1.withdraw(50000)
 print(b1.get_balance())
-
 b1.withdraw(5000)
 print(b1.get_balance())
