@@ -1,5 +1,5 @@
 #PUBLIC
- 
+
 class actor:
     country="india" #public cv
     def __init__(self,name,sal,language):
