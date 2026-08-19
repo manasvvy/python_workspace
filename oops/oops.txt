@@ -330,7 +330,7 @@ NOTE- IT MUST RETURN STRING
  ->__eq__ is overriden for the inbuilt type (int,float,list)
  ->should always return bool val
 
-# isinstance(obj,ClassName):
+# isinstance(obj,ClassName): 
  -> predefined function that checks weather the given obj belongs to a particular class or nah
  ->it returns bool val 
 
