@@ -1,7 +1,7 @@
 #encapsulation using property decorator
 
 class stu:
-    def __init__(self):
+    def __init__(self): 
         self.__marks=0 #priv iv
 
     @property               #getter should be 1st
