@@ -1,6 +1,6 @@
 #setter and getter methods
 class student:
-    def __init__(self):
+    def __init__(self): 
         self.__marks = 0
         self.__fees = 0
 
