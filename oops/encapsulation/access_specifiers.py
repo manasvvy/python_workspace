@@ -7,7 +7,7 @@ class actor:
         self.sal=sal
         self.language=language
 
-    def display_poster(self): #public im
+    def display_poster(self): #public im 
         print(f"idk {self.name} boss") #accessing public iv in class
 
     @classmethod
