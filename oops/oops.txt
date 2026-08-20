@@ -394,7 +394,85 @@ obj=ClassName()
 print(obj.get())
 obj.set_var()           
 
- 
+ADVANTAGES: 
+-protect the data 
+-readability of program improved
+-modifyv the pvt data w validation
+-make the data read only(only getter m)
+-makes write only(setter)
+-both(setter getter)
+
+``````ACHIEVE ENCAPSULATION USING @property DECORATOR````````
+
+-> its a way to access a method like variables 
+2 types:
+   1. @property = allows method to behave like getter 
+      ex: print(instanceref.variable)
+
+   2. @property>.setter = defines setter for the same property
+      allows u to assign a value but indirectly it calls a method 
+      ex: instanceref.variable= new value
+
+*GETTER MUST COME FIRST
+ALWAYS NAME SETTER AND GETTER SAME*     
+
+------------------------------------ABSTRACTION-----------------------------------------
+Abstraction:
+important oops principle, which is the process of "defining required behaviour in parent class
+without providing full implementation and forcing the subclasses to implement it."
+
+------------------------------------------------------------
+
+Abstract class (Incomplete)
+-> It is a class that is meant ONLY for inheritance, because it CANNOT be Instantiated
+   (object creation is NOT possible)
+-> abstract class is a idea/concept and is incomplete by design.
+-> should have atleast 1 "abstract method".
+
+NOTE:
+Abstract class acts like a contract, which ENFORCES the rules upon subclasses.
+
+abstract method -> it is method declared in abstract class decorated using @abstractmethod
+                -> it is an incomplete method, having method name and parameter, BUT NO
+                   implementation
+                -> it is meant to be overridden/implemented by the child classes
+
+Steps to make a class as an Abstract class and achieve abstraction=
+1) define a class that should inherit ABC class
+2) It shud contain Atleast 1 abstract method which shud be
+   decorated using @abstractmethod
+3) abstract class CANNOT be Instantiated, we can create subclass
+   instances using CONTRACT OF ABSTRACT
+4) CONTRACT OF ABSTRACT -> if a subclass inherits from abstract
+   superclass, then the subclass MUST OVERRIDE all the abstract
+   methods to create subclass instances OR else the subclass will
+   also become an abstract class.
+
+def var(self,newvalue):
+    self.__var=newvalue
+
+1) Getter MUST come first (becoz getter defines the property)
+2) Setter MUST come after the Getter (setter works on that property)
+3) Always use same method name for both setter and getter and the property
+
+Advantages of using Property
+1) it gives you attribute access with method control
+2) looks like attribute "but works like a method"
+3) when requirements change, the code does not break
+
+syntax:
+from abc(module abstract based classes ) import ABC(abstract base class) , abstraction
+class ClassName(ABC):
+   @abstractmethod
+   def methodname(self):
+      pass
+
+
+
+
+
+
+
                         
           
 
