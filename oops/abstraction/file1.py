@@ -8,7 +8,7 @@ class emp(ABC): #step2 emp is subclass of abc
 #e=emp() cant create instance for abstract classes
 
 
-class actress(ABC): #step2 actress is subclass of abc
+class actress(ABC): #step2 actress is subclass of abc 
     @abstractclassmethod
     def act(self): #work abstract method
         pass
