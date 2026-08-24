@@ -5,7 +5,7 @@
 #         m=AccuWeather()#object create inside method
 #         print(f"{destination} weather details")
 #         print(m.acess_temp())
-#         print(m.acess_humidity())
+#         print(m.acess_humidity()) 
 #         print(f"ticket booked from {source} to {destination}")
 # m1=MakeMyTrip()
 # m1.book_ticket("bengalore","pondi")    
