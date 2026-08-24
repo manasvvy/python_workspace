@@ -6,4 +6,4 @@ class AccuWeather(WeatherAPI):
         return randint(4, 25)
 
     def acess_humidity(self):
-        return randint(0, 100)
+        return randint(0, 100) 
