@@ -1,0 +1,42 @@
+EXCEPTION
+
+TWO TYPES OF ERRORS IN PYTHON:
+
+1.SYNTAX ERROR - OCCURS BCOF INVALID SYNTAX
+               
+2.RUNTIME ERROR - OCCURS WHILE EXECUTING THE ERROR  
+                - IT OCCURS DUE TO = END USER INPUT
+                                   = PROGRAMMING logic
+                                   = MEMORY PROBLEMS
+                - ALSO CALLED EXCEPTIONS (exception handling is only for runtime error)
+
+  NORMAL FLOW OF PYTHON EXECUTION:
+    - if all the statements are as per the conditions successfully and if u get the output as our expected.
+
+  ABNORMAL FLOW OF PYTHON EXECUTION:
+    - if any error occur at runtime the immediately the programogram flow is terminated not implemented 
+
+EXCEPTIONS => unwanted/unexpected event which is disturbing the normal flow of the program.
+           => below lines wont get executed thats why we need to handle these on high ppriority
+
+EXCEPTION_HANDLING => process in which we define a way  so that the program does not terminate abnormally due to exceptions 
+
+DEFAULT EXCEPTION_HANDLING => in py for every exception type has a corroesponding class and eveey exception is an object so whenever an exception is occur PVM
+                              will create  the corroesponding exception object and will check for handling code
+                           => if the handling code isnt available then python prints the exception info to the console
+
+EXCEPTION HIERARCHY !!!!!!!
+
+ EXCEPTION_HANDLING in python is achieved using try and except block
+  
+  1. try block ->try keyword
+               ->the code which may rise exception  if occured should be written inside the try block 
+
+  2. except block  ->keyword
+                   ->the corroesponding handling code for exception needs to be written inside the except block 
+  
+  
+working => 1. if code written in try block raises exception  only then the execution flow goes to the exception block for handling code 
+           2. if there is no exception  in try block then it wont go to except block 
+
+           APPROACH -> to get the exception information we can have the referance 
