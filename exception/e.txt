@@ -1,4 +1,4 @@
-EXCEPTION
+@EXCEPTION
 
 TWO TYPES OF ERRORS IN PYTHON:
 
@@ -40,3 +40,26 @@ working => 1. if code written in try block raises exception  only then the execu
            2. if there is no exception  in try block then it wont go to except block 
 
            APPROACH -> to get the exception information we can have the referance 
+
+case2 : if a risky code is written above the try block then abnormal termination occurs 
+
+case3 : when no specific exception name is handled then no termination error occur 
+
+case4 : skippin below lines inside a try block if exception occurs in 1st line of try block then execution goes to except block without executing remaining lines
+
+case5 : if exception occurs in the except block then abnormal termination occurs 
+
+case6 : exception occuring below outside the except 
+                                    
+
+APPROACH2=> we can print exception info by creating the reference to the exception 
+
+APPROACH3=> when there are multiple exceptions then we can write multiple except blocks for every exception type , a seprate exception block must be written
+
+APPROACH4=> we can have each exception block inside a tuple aliasing it into referance variable but we cant write custom msg for each exception 
+
+#default except block - we can use them to handle any type of exceptions 
+
+          
+
+
