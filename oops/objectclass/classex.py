@@ -10,7 +10,7 @@ class Student:
 
 s1 = Student("Manasvi", 85)
 s1.display()
-print("---------------------------------------------------")
+print("---------------------------------------------------") 
 
 class Employee:
     def __init__(self, id, name, salary):
