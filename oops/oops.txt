@@ -4,7 +4,7 @@ we need OOPS
 2 imp concepts :
  1. class
  -> its a blueprint or a template or a logical entity that describes the property and behaviour of an object
- -> we declare a class in py using class keyword 
+ -> we declare a class in py using class keyword  
 
  syntax = 
  class ClassName:
