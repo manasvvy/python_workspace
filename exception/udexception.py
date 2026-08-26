@@ -16,7 +16,7 @@ class atm:
 
     def deposit(self,ammount):
         if ammount<=0:
-            raise InvalidAmountException("get a job")        
+            raise InvalidAmountException("get a job")         
         else:
             self.balance+=ammount
             print("ammount deposited")
