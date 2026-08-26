@@ -60,6 +60,29 @@ APPROACH4=> we can have each exception block inside a tuple aliasing it into ref
 
 #default except block - we can use them to handle any type of exceptions 
 
-          
+try except else finally syntax:
 
+try:
+  which may raise exception
+except exception name as ref name:
+  exception handling
+else:
+  executes when try block executes successfully without exceptions 
+finally:
+  gets executed irrespectively of weather an exception occurs 
+  #cleanup task = an operation performed to release, close, unlock and disconnect or restore resources that were aquired during program execution 
 
+*raise keyword
+-> used to invoke or raise an exception
+  syntax:
+        raise ExceptionName("exception msg")
+-> followed by an instance of an exception class which we want to raise 
+-> we can choose predefined or custom exception 
+ 
+STEPS TO CREATE USERDEFINED EXCEPTION:
+  1. create a class w custom exception name and it shuld inherit exception class 
+  custom exception class should normalyy represent the ERROR
+
+  2. whenever there is negative outcome raise an exception with custom message error using raise keyword and handle thyat using try and except block 
+  
+   
