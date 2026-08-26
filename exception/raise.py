@@ -1,2 +1,2 @@
 print("start")
-raise ZeroDivisionError("this iz")
+raise ZeroDivisionError("this iz") 
