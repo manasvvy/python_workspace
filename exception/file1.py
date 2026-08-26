@@ -3,7 +3,7 @@ print(2)
 print(3)
 l=[10,20,30]
 try:
-    print(l[4]) #runtime error / exception
+    print(l[4]) #runtime error / exception 
     print("line1")
 except IndexError as e:
     print(8/0)
