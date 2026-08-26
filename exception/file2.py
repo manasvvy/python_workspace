@@ -7,4 +7,4 @@ try:
     print(s[n2])
 except (ZeroDivisionError IndexError ValueError) as e:
     print(e)
-
+ 
