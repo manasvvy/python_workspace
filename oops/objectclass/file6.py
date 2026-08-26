@@ -11,3 +11,4 @@ class student:
 s1=student(14,"m")        
 s2=student(14,"m")      
 print(s1==s2) #s1__eq__(s2)
+ 
