@@ -6,7 +6,7 @@ class InvalidAgeException(Exception):
 
 
 class Student:
-    def __init__(self, name, roll_no):
+    def __init__(self, name, roll_no): 
         self.name = name
         self.roll_no = roll_no
         self.marks = 0
