@@ -1,31 +1,43 @@
-class InSufficientBalanceException(Exception):
-    pass
-class InvalidAmountException(Exception):
+class InvalidMarksException(Exception):
     pass
 
-class atm:
-    def __init__(self,balance):
-        self.balance=balance
+class InvalidAgeException(Exception):
+    pass
 
-    def withdraw(self,ammount):
-        if ammount>self.balance:
-            raise InSufficientBalanceException("AMT EXCEEDS")            
+
+class Student:
+    def __init__(self, name, roll_no):
+        self.name = name
+        self.roll_no = roll_no
+        self.marks = 0
+        self.age = 0
+
+    def setMarks(self, marks):
+        if marks < 0 or marks > 100:
+            raise InvalidMarksException("Marks should be between 0 to 100")
         else:
-            self.balance=ammount
-            print("successful")
+            self.marks = marks
 
-    def deposit(self,ammount):
-        if ammount<=0:
-            raise InvalidAmountException("get a job")         
+    def setAge(self, age):
+        if age < 0 or age > 120:
+            raise InvalidAgeException("Age should be between 0 to 120")
         else:
-            self.balance+=ammount
-            print("ammount deposited")
+            self.age = age
 
-a=atm(5000)
-a.deposit(2000)
-a.deposit(-50)
+
+s = Student("Manasvi", 101)
 
 try:
-    a.deposit(-50)
-except InvalidAmountException as e:
+    s.setMarks(85)
+    s.setAge(22)
+
+    print("Name:", s.name)
+    print("Roll No:", s.roll_no)
+    print("Marks:", s.marks)
+    print("Age:", s.age)
+
+except InvalidMarksException as e:
+    print(e)
+
+except InvalidAgeException as e:
     print(e)
