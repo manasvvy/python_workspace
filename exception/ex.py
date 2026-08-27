@@ -4,7 +4,7 @@ class InvalidAgeException(Exception):
     pass
 
 class student:
-    def __init__(self,name,):
+    def __init__(self,name,): 
         self.name=name
 
     def set(self,marks):
