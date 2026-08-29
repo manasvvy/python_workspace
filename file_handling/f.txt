@@ -1,7 +1,7 @@
 FILE HANDLING = DATA CREATED DURING THE EXECUTION IS STORED IN MEMORY (RAM) WHEN THE PROGRAM TERMINATES IT GETS LOST
 
 FILE = loc where data is stored permanently
-       if we wanna store the data persistently we can store it in a file on a secondary storage ssd , hard disk or pendrive 
+       if we wanna store the data persistently we can store it in a file on a secondary storage ssd , hard disk or pendrive
        the data remains available even after the program TERMINATES
 
 FILE HANDLING = reading creating opening and managing the files using a program...
@@ -45,6 +45,10 @@ DIFFERENT MODES==>
                 = if file exists opens in append + read mode 
                 = if file not found it creates a new file in write mode
 
+                7. 'x' -> exclusive
+                = if the file exists u get fileexisterror 
+                = creates a new file in the write mode only if the file is not existing
+                = used when u dont wanna overwrite an existing file
 
 
 FILE OBJECT METHODS ==>
@@ -55,26 +59,63 @@ FILE OBJECT METHODS ==>
                     syntax: f.writeable() 
 
                     3. read(n) -> returns file as a string
-                     n= characters of a string
+                    n= characters of a string
                     syntax: data=f.read()
 
-                    4. readline() -> if n is not given it reads complete line
+                    4. readlines() -> reads all the lines and return them as list of stirng w each ele representing string
                     syntax: data=f.readline()
 
-                    7. readlines() -> reads all the lines and return them as list of stirng w each ele representing string
-                    syntax: data=f.readline()
-
-                    6. write(string) -> sends string data to python file it does not add a new line automatically u have to provide \n at the end of string 
+                    5. write(string) -> sends string data to python file it does not add a new line automatically u have to provide \n at the end of string 
                     syntax: f.write(string)
 
-                    7. tell() -> returns the current file cursor position in the form or an int
+                    6. tell() -> returns the current file cursor position in the form or an int
                     syntax: position=f.tell()
 
-                    8. seek(offset) -> moves the cursor to the position by passing int value
+                    7. seek(offset) -> moves the cursor to the position by passing int value
                     syntax: f.seek(offset)
 
-                    9. close() -> closes the file and releases the resourcces associated w it , it dissconnects the program from the file
+                    8. close() -> closes the file and releases the resourcces associated w it , it dissconnects the program from the file
                     syntax: f.close()
 
-                    10. writelines(list) -> writes element of iterable to the file it doesnt auto create a newline characters
+                    9. writelines(list) -> writes element of iterable to the file it doesnt auto create a newline characters
                     syntax: f.writelines(list)
+
+--------------------------------------------------------------------------------------------------
+
+with -> keyword gives the file a name opens thye file and closes the file when the block ends 
+     -> with automatically handles opening or closing the file even with open
+syntax==> with open ("filename.txt","mode") as variable:
+            #file operations in indentation block
+
+--------------------------------------------------------------------------------------------------
+
+SERIALISATION ==> process of converting and object (datastructure) into a format that can be stored or transmitted 
+the format is: text(JSON)
+               binary(pickle)
+
+NON-TEXT python object such as int float list dict none needs conversion before storage into a file and thats why we use jason module 
+
+json <==> it converts structured data in text
+          safely written into files
+          structure can be reliably stored 
+
+1. dumps() -> syntax: json_str=json.dumps(obj)
+
+dumps() is a function of json module that converts python obj into json formatted string.
+
+2. dump() -> syntax: json.dump(obj,f)
+
+dump() is a function of json module that converts python obj into json format and writes it into file.
+
+DESERIALISATION ==> process of converting json data back to python object 
+
+1. loads() -> syntax: python_obj=json.loads(json_string)
+
+loads() process of converting json data back to python object 
+
+2. load() -> syntax: json.load(f)
+
+json module reads json data from filoe and converts it to py obj
+     
+
+     
