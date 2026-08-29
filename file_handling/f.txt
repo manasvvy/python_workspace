@@ -1,6 +1,6 @@
 FILE HANDLING = DATA CREATED DURING THE EXECUTION IS STORED IN MEMORY (RAM) WHEN THE PROGRAM TERMINATES IT GETS LOST
 
-FILE = loc where data is stored permanently
+FILE = loc where data is stored permanently 
        if we wanna store the data persistently we can store it in a file on a secondary storage ssd , hard disk or pendrive
        the data remains available even after the program TERMINATES
 
