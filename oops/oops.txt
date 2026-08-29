@@ -309,7 +309,7 @@ IMPORTANCE OF ONJECT CLASS
 
 NOTE- IT MUST RETURN STRING 
 
-4. __repr__(cls)
+4. __repr__(self)
  -> returns the not confusing dev repr of an object
  ->this method gets called __str_() is absent and __repr__ is defined when a an instance is printed
  ->when we invoke  repr(objref)
