@@ -1,6 +1,6 @@
 FILE HANDLING = DATA CREATED DURING THE EXECUTION IS STORED IN MEMORY (RAM) WHEN THE PROGRAM TERMINATES IT GETS LOST
 
-FILE = loc where data is stored permanently 
+FILE = loc where data is stored permanently
        if we wanna store the data persistently we can store it in a file on a secondary storage ssd , hard disk or pendrive
        the data remains available even after the program TERMINATES
 
@@ -118,4 +118,77 @@ loads() process of converting json data back to python object
 json module reads json data from filoe and converts it to py obj
      
 
-     
+USING PICKLE MODULE
+import pickle
+
+PICKLING / SERIALISATION
+
+ - Pickling converts a Python object into
+ - a byte stream (binary data) and stores it
+ - in a binary file.
+
+
+ 1) dumps() -> Syntax: byte_data = pickle.dumps(obj)
+
+ dumps() is a function of the pickle module
+ that converts a Python object into a byte stream.
+
+
+ 2) dump() -> Syntax: byte_data = pickle.dump(obj, f)
+
+ dump() is a function of the pickle module
+ that converts a Python object into a byte stream
+ and writes it into a binary file.
+
+
+ UNPICKLING / DESERIALISATION
+
+ Unpickling is the process of converting
+ a byte stream (binary data) back into
+ the original Python object.
+
+1) loads() -> Syntax: obj = pickle.loads(byte_data)
+
+ loads() converts a byte stream back
+ into the original Python object.
+
+
+2) load() -> Syntax:obj = pickle.load(f)
+
+ load() reads the byte stream from a binary file
+ and converts it back into the original Python object.
+
+
+#COMPLETE EXAMPLE
+import pickle
+
+python_obj = [10, 20, 30]
+
+#Pickling using dumps()
+byte_data = pickle.dumps(python_obj)
+
+print(byte_data)
+
+#Unpickling using loads()
+object = pickle.loads(byte_data)
+
+print(object)
+print(type(object))
+
+
+#FILE EXAMPLE
+import pickle
+
+python_obj = [10, 20, 30]
+
+#Write object to binary file
+with open("file_handling/demo.pkl", "wb") as f:
+    pickle.dump(python_obj, f)
+
+
+#Read object from binary file
+with open("file_handling/demo.pkl", "rb") as f:
+    object = pickle.load(f)
+
+print(object)
+print(type(object))     
