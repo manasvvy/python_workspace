@@ -181,7 +181,7 @@ import pickle
 
 python_obj = [10, 20, 30]
 
-#Write object to binary file
+#Write object to binary file 
 with open("file_handling/demo.pkl", "wb") as f:
     pickle.dump(python_obj, f)
 
